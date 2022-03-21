@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+	font-family: 'Fredoka', sans-serif;
+}
+header {
+    background-image: url(../images/banner.jpg);
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+}
+header h1 {
+    font-size: 500%;
+    width: 70%;
+    margin: 2% auto 0 auto;
+    color: rgba(236, 199, 31, 0.7);
+    text-align: center;
+	font-family: 'Oleo Script', cursive;
+	text-shadow: 3px 3px 3px #000;
+	padding-top: 0.7%;
+
+}
+/* Heading */
+h2 {
+	font-size: 200%;
+	margin: 0 auto;
+	color: rgb(2, 105, 2);
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+/* Hamburger Menu */
+input#mobile_menu {
+    display: none;
+}
+input#mobile_menu:checked + nav {
+    left: 0px;
+}
+input#mobile_menu:checked + nav label {
+    background-image: url(../images/menu_close.svg);
+}
+nav {
+	width: 180px;
+	background-color: #AEE5D8;
+	padding: 10px 20px 10px 25px;
+	color: #fff;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0px;
+	left: -180px;
+    transition: left .6s ease-in-out;
+}
+
+nav a {
+	color: black;
+	text-decoration: none;
+	display: block;
+	margin: 0;
+	padding: 14px 0;
+	border-top: 1px solid rgba(255,255,255,.1);
+}
+
+nav a:first-of-type {
+	border-top: none;
+}
+
+nav label {
+	cursor: pointer;
+	display: block;
+	width: 42px;
+	height: 42px;
+	background: #F3B4ED url(images/menu.svg) no-repeat center center;
+	background-size: 22px auto;
+	position: absolute;
+	top: 78px;
+	right: -42px;
+}
+main section {
+	padding: 2% 3%;
+}
+main section p {
+	font-size: 1.3rem;
+	line-height: 1.5;
+	margin-bottom: 2%;
+}
+main section p ul {
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+main section .imgmain {
+	box-shadow: 2px 2px 5px black;
+	border: black solid 2px;
+	margin-bottom: 1%;
+}
+footer {
+    text-align: center;
+	background-color: #F3B4ED;
+}
+
+
+@media (min-width:650px) {
+    main {
+        display: flex;
+    }
+}
+
